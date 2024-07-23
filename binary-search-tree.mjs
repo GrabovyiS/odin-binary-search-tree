@@ -312,8 +312,6 @@ class Tree {
       callback = providedCallback;
     }
 
-    // The traversal is abstracted so that we do not make
-    // checks about callback every recursive function call
     this.traversePostOrder(callback, this.root);
 
     if (!providedCallback) {
